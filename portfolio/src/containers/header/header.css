@@ -1,0 +1,180 @@
+.pf__header {
+  display: flex;
+}
+
+.pf__header-content{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  margin-right: 5rem;
+}
+
+.pf__header-content h1{
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 75px;
+  letter-spacing: -0.04em;
+}
+
+.Typewriter {
+  min-height: 160px;
+}
+
+.Typewriter__wrapper {
+  background: var(--gradient-h1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Typewriter__cursor {
+  color: #FFF;
+}
+
+.pf__header-content p{
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  color: var(--color-text);
+
+  margin-top: 1.5rem;
+}
+
+.pf__header-content__buttons {
+  width: 100%;
+  margin: 2rem 0 1rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.pf__header-content__buttons a{
+  flex: 0.6;
+  width: 100%;
+  min-height: 50px;
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  background: #4ac2ed;
+  color: #FFF;
+  cursor: pointer;
+  outline: none;
+  padding: 0.75rem 1rem;
+  border: none;
+  max-width: 250px;
+  margin-right: 2rem;
+  border-radius: 13px;
+  text-align: center;
+
+  &:hover {
+    box-shadow: inset 0 -3px 0 rgba(0,0,0,0.2);
+  }
+
+  &:active {
+    transform: translateY(1px);
+    box-shadow: inset 0 3px 0 0 rgba(0,0,0,0.15);
+  }
+}
+
+.pf__header-content__buttons a:last-of-type {
+  background: transparent;
+  border: 2px solid #4ac2ed;
+  border-color: #4ac2ed;
+}
+
+.pf__header-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pf__header-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.down-arrow {
+  position: absolute;
+  top: calc(100vh - 60px);
+  left: calc(50% - 14px);
+  width: 0;
+  height: 30px;
+  border: 2px solid;
+  border-radius: 2px;
+  color: #FFF;
+  animation: jumpInfinite 1.5s infinite;
+}
+
+.down-arrow:after {
+  content: " ";
+  position: absolute;
+  top: 12px;
+  left: -10px;
+  width: 16px;
+  height: 16px;
+  border-bottom: 4px solid;
+  border-right: 4px solid;
+  border-radius: 4px;
+  transform: rotateZ(45deg);
+}
+
+@keyframes jumpInfinite {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 20px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .pf__header {
+    flex-direction: column;
+  }
+  .pf__header-content {
+    margin: 0 0 3rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .pf__header h1{
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .pf__header p{
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .pf__header-content__buttons a{
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+}
+
+@media screen and (max-width: 490px) {
+  .pf__header h1{
+    font-size: 36px;
+    line-height: 48px;
+  }
+  .pf__header p{
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .pf__header-content__buttons a{
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

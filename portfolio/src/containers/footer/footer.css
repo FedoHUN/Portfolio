@@ -1,0 +1,149 @@
+.pf__footer {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--color-footer);
+}
+
+.pf__footer-heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.pf__footer-heading h1 {
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: 62px;
+  font-weight: 800;
+  line-height: 75px;
+  letter-spacing: -2.48px;
+}
+
+.pf__footer-form {
+  padding: 40px;
+  width: 50%;
+  background: rgba(20, 3, 50);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.form__details {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.form__details-name {
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+}
+
+.form__inputM {
+  font-family: var(--font-family);
+  border: 2px solid rgba(100, 3, 200);
+  border-radius: 5px;
+  height: 2.5rem;
+  line-height: 1.5;
+  width: 100%;
+  min-width: 300px;
+  font-size: 1.4rem;
+  padding: 0.5em 0.75em;
+  background-color: transparent;
+  color: white;
+  font-weight: 500;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.form__inputL {
+  font-family: var(--font-family);
+  color: white;
+  padding: 0.25em 0.75em;
+  border: 2px solid rgba(100, 3, 200);
+  border-radius: 5px;
+  height: initial;
+  line-height: 1.5;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  background-color: transparent;
+  font-size: 1.4rem;
+  font-weight: 500;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.form__inputM:focus,
+.form__inputL:focus{
+  border: 2px solid rgba(20, 3, 100);
+}
+
+.form__details-email {
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  width: 100%;
+}
+
+.form__message {
+  padding: 1rem;
+}
+
+[type="submit"] {
+  font-family: var(--font-family);
+  background: rgba(100, 3, 200);
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  font-weight:700;
+}
+
+[type="submit"]:hover {
+  background: rgba(20, 3, 100);
+}
+
+@media screen and (max-width: 850px) {
+  .pf__footer-heading h1 {
+    font-size: 44px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .pf__footer-heading h1 {
+    font-size: 34px;
+    line-height: 42px;
+  }
+
+  .pf__footer-form div {
+    margin: 1rem 0;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  .pf__footer-heading h1 {
+    font-size: 27px;
+    line-height: 38px;
+  }
+}
