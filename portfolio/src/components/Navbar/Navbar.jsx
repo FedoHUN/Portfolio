@@ -33,9 +33,7 @@ const Navbar = () => {
             <p><a href="#about">About Me</a></p>
             <p><a href="#projects">Projects</a></p>
             <p><a href="#resume">Resume</a></p>
-          </div>
-          <div className="pf__navbar-menu_container-links-contact">
-            <button type="button">Contact Me</button>
+            <p><a href='#footer'>Contact Me</a></p>
           </div>
         </div>
         )}

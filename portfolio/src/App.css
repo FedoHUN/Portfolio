@@ -58,3 +58,31 @@ a{
 .sidebar a:hover {
   color: #4ac2ed;
 }
+
+@media screen and (max-width: 768px) {
+  .section__padding {
+    padding: 4rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section__padding{
+    padding: 4rem 2rem;
+  }
+  .sidebar a {
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+  div.pf__about.section__padding{
+    padding: 4rem 3rem !important;
+  }
+  div.pf__projects.section__padding{
+    padding: 0rem 2rem 4rem 2rem !important;
+  }
+  div.pf__header.section__padding{
+    padding: 2rem 2rem 4rem 2rem;
+  }
+  .pf__about-contact_title {
+    margin-right: 2rem;
+  }
+}

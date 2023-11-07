@@ -1,6 +1,8 @@
 .pf__about {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .pf__about-image {
@@ -8,7 +10,8 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-right: 2rem;
+  width: fit-content;
+  height: 100%;
 }
 
 .pf__about-image img {
@@ -18,7 +21,7 @@
 }
 
 .gradient__border {
-  width: 100%;
+  width: 80%;
   position: relative;
 }
 
@@ -37,6 +40,18 @@
   filter: blur(1rem);
 }
 
+section {
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+section span {
+  display: block;
+  transform: translateX(-100px);
+  opacity: 0;
+}
+
 @property --gradient-angle {
   syntax: "<angle>";
   initial-value: 0deg;
@@ -52,7 +67,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-around;
   align-items: flex-start;
 }
 
@@ -81,18 +96,6 @@
             mask: var(--mask);
 }
 
-.pf__about-content h4 {
-  color: #71E5FF;
-  font-family: var(--font-family);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 30px; /* 187.5% */
-}
-
-.pf__about-content h4:last-child {
-  color: #FF8A71;
-}
-
 .pf__about-content h1{
   font-family: var(--font-family);
   font-size: 34px;
@@ -106,7 +109,7 @@
 .pf__about-heading p {
   color: var(--color-text);
   font-family: var(--font-family);
-  font-size: 16px;
+  font-size: 18px;
   line-height: 30px; /* 187.5% */
 
   margin-bottom: 2rem;
@@ -117,6 +120,7 @@
   justify-content:flex-start;
   align-items: flex-start;
   flex-direction: row;
+  width: fit-content;
 
   margin: 0.5rem;
 
@@ -198,16 +202,60 @@
   margin-right: 0.5rem;
 }
 
-@media screen and (max-width: 950px) {
-  .pf__about {
-    flex-direction: column;
+@media screen and (max-width: 1200px) {
+  .pf__about-heading p {
+    font-size: 14px;
+    line-height: 21px;
   }
-
-  .pf__about-image {
-    margin: 1rem 0;
+}
+@media screen and (max-width: 1024px) {
+  .pf__about-heading p {
+    font-size: 14px;
+    line-height: 19px;
   }
-
-  .pf__about-content{
-    margin-top: 2rem;
+  .pf__about-contact_title h2 {
+    font-size: 16px;
+    line-height: 28px;
   }
+  .pf__about-contact_text p {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .pf__about-content h1{
+    font-size: 26px;
+    line-height: 36px; /* 132.353% */
+  }
+  .pf__about-heading p{
+    margin-bottom: 1.5rem;
+  }
+  .pf__about-interests_container h2 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .pf__about-interests h1{
+    font-size: 22px;
+    line-height: 34px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pf__about-image{
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .pf__about-contact_title h2 {
+    display: flex;
+    align-items: center;
+  }
+  .pf__about-interests_container h2 {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .pf__about-interests_container h2 .icon{
+    margin-right: 0.3rem;
+  }
+  .pf__about-heading p {
+    font-size: 12px;
+    line-height: 18px;
+  } 
 }

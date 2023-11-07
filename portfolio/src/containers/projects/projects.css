@@ -89,22 +89,43 @@ pf__projects-container_article {
   font-weight: 900;
 }
 
-@media screen and (max-width: 990px) {
-  .pf__projects-container {
-    flex-direction: column;
+@media screen and (max-width: 1024px) {
+  .pf__projects-heading{
+    margin-bottom: 4rem;
+  }
+  .pf__projects-container_article {
+    margin: 1.5rem;
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .pf__projects-heading h1 {
     font-size: 46px;
     line-height: 52px;
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 480px) {
   .pf__projects-heading h1 {
     font-size: 34px;
     line-height: 42px;
+  }
+  .pf__projects-heading{
+    margin-bottom: 2rem;
+  }
+  .pf__projects-container_article{
+    margin: 1rem;
+  }
+  .pf__projects-container_article:last-of-type {
+    display: none;
+  }
+  .pf__projects-container_article-content h3{
+    font-size: 1em;
+  }
+  .pf__projects-container_article-content p{
+    font-size: 12px;
+  }
+  .coming h1{
+    font-size: 12px;
   }
 }

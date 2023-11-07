@@ -23,14 +23,14 @@ function Header() {
                         .start();
                 }}
             /></h1>
-        <p>I am a junior Front-end developer from Slovakia. I can make your stunning web designs and ideas real by coding them.</p>
-        <div className='pf__header-content__buttons'>
+        <p className='fade-in'>I am a junior Front-end developer from Slovakia. I can make your stunning web designs and ideas real by coding them.</p>
+        <div className='pf__header-content__buttons fade-in'>
           <a href='#footer'>Contact me</a>
           <a><FontAwesomeIcon className='icon' icon={faDownload} />Download CV</a>
         </div>
       </div>  
 
-      <div className='pf__header-image'>
+      <div className='pf__header-image fade-in'>
         <img src={profile} alt='profile' />
       </div>
       <div className='down-arrow'></div>
