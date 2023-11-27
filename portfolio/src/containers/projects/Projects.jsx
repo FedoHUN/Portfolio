@@ -44,7 +44,7 @@ const Blog = () => {
       <Section>
         <div className='pf__projects-container'>
           <div className='pf__projects-container_article first-article'>
-          <a href='https://fedohun.github.io/mgpt-3/' target='_blank' className='mgpt-3__anchor'>
+          <a href='https://fedohun.github.io/mgpt-3/' target='_blank' className='mgpt-3__anchor and-a'>
               <img src={page1} alt='GPT3-Site' />            <span></span>
             <div className='pf__projects-container_article-content'>
               <h3>GPT-3 Page</h3>
