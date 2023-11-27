@@ -43,12 +43,14 @@ const Blog = () => {
       </div>
       <Section>
         <div className='pf__projects-container'>
-          <div className='pf__projects-container_article'>
+          <div className='pf__projects-container_article first-article'>
+          <a href='https://fedohun.github.io/mgpt-3/' target='_blank' className='mgpt-3__anchor'>
               <img src={page1} alt='GPT3-Site' />            <span></span>
             <div className='pf__projects-container_article-content'>
               <h3>GPT-3 Page</h3>
               <p>Open Page</p>
             </div>
+            </a>
           </div>
           <div className='pf__projects-container_article'>
               <img src={gradient} alt='gradient' />

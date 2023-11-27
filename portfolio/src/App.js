@@ -5,7 +5,7 @@ import {Navbar} from './components';
 import './App.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faGit, faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-
+import { Routes, Route } from 'react-router-dom';
 
 const App = () => {
   return (
