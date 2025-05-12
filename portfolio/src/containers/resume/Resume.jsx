@@ -45,6 +45,14 @@ const Resume = () => {
               <div className='outer'>
                 <div className='card'>
                   <div className='info'>
+                    <h3 className='title'>elity.DEV</h3>
+                    <p>Frontend developer</p>
+                    <p className='description'>Working with React, Tailwind CSS, and Next.js to build a full reservation system with an admin panel, using Axios and TanStack Query for backend integration.</p>
+                    <p className='date'>02/2024 - 12/2024</p>
+                  </div>
+                </div>
+                <div className='card'>
+                  <div className='info'>
                     <h3 className='title'>The Technical University of Košice</h3>
                     <p>Automotive Electronics</p>
                     <p className='date'>2022 - Present</p>
@@ -63,9 +71,16 @@ const Resume = () => {
         </Section>
         <Section>
           <div className='pf__certifications'>
-            <h1><FontAwesomeIcon className='icon' icon={faCircleCheck} />Certifications</h1>
+            <h1><FontAwesomeIcon className='icon' icon={faCircleCheck}/>Certifications</h1>
             <div className='pf__timeline'>
               <div className='outer'>
+                <div className='card'>
+                  <div className='info'>
+                    <h3 className='title'>Frontend developer Internship</h3>
+                    <p>Frontend Development Internship Certification <br/> elity.DEV - PALA s.r.o.</p>
+                    <p className='date'>2024</p>
+                  </div>
+                </div>
                 <div className='card'>
                   <div className='info'>
                     <h3 className='title'>CCNA Enterprise networking, security, and automation</h3>
@@ -86,15 +101,15 @@ const Resume = () => {
                 </div>
               </div>
             </div>
-        </div>
+          </div>
         </Section>
       </div>
       <div className='pf__resume-stack_container'>
         <Section>
-        <h1><FontAwesomeIcon className='icon' icon={faLayerGroup} />Tech Stack</h1>
+          <h1><FontAwesomeIcon className='icon' icon={faLayerGroup}/>Tech Stack</h1>
         </Section>
         <Section>
-          <div className='pf__resume-stack_list'>
+        <div className='pf__resume-stack_list'>
             <span></span>
             <h2><FontAwesomeIcon className='icon' icon={faHtml5} />HTML</h2>
             <h2><FontAwesomeIcon className='icon' icon={faCss3Alt} />CSS</h2>

@@ -47,7 +47,7 @@ const Footer = () => {
               <textarea className='form__inputL' rows='5' name="message" placeholder='Message' required />
             </div>
             <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_next" value="http://localhost:3000/" />
+            <input type="hidden" name="_next" value="https://fedohun.github.io/Portfolio/" />
             <input type="hidden" name="_subject" value="New submission!" />
             <button type="submit">Send</button>
           </form>
